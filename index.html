@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushp Raj Tripathi | Frontend Developer</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom styles for the new theme */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212; /* Charcoal background */
+            color: #e0e0e0;             /* Light gray text */
+        }
+        
+        /* Heading Font */
+        h1, h2, h3, .font-heading {
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        /* Custom accent color */
+        .text-accent {
+            color: #008cff;
+        }
+        .bg-accent {
+            background-color: #008cff;
+        }
+        .border-accent {
+            border-color: #008cff;
+        }
+
+        /* Styling for the header on scroll */
+        .header-scrolled {
+            background-color: rgba(18, 18, 18, 0.85); /* Darker blur */
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Project card base and hover effect */
+        .project-card {
+            background-color: #1e1e1e; /* Card background */
+        }
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 30px -15px rgba(0, 140, 255, 0.1);
+        }
+
+        /* Section heading style */
+        .section-heading::after {
+            content: '';
+            display: block;
+            position: relative;
+            top: -12px;
+            width: 300px;
+            height: 1px;
+            margin-left: 20px;
+            background-color: #333; /* Dark gray line */
+        }
+    </style>
+</head>
+<body class="leading-normal tracking-normal">
+
+    <header id="header" class="fixed w-full z-30 top-0 text-white transition-all duration-300">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-4 px-6">
+            <div class="pl-4 flex items-center">
+                <a class="font-heading text-accent no-underline hover:no-underline font-bold text-2xl lg:text-3xl" href="#">
+                    TEENAS !!
+                </a>
+            </div>
+            <div class="block lg:hidden pr-4">
+                <button id="nav-toggle" class="flex items-center p-1 text-accent hover:text-gray-200 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                </button>
+            </div>
+            <nav id="nav-content" class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-[#1e1e1e] lg:bg-transparent text-center p-4 lg:p-0 z-20">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                    <li class="mr-3"><a class="nav-link inline-block py-2 px-4 text-gray-300 hover:text-accent no-underline" href="#about">About</a></li>
+                    <li class="mr-3"><a class="nav-link inline-block py-2 px-4 text-gray-300 hover:text-accent no-underline" href="#projects">Projects</a></li>
+                    <li class="mr-3"><a class="nav-link inline-block py-2 px-4 text-gray-300 hover:text-accent no-underline" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="pt-24 md:pt-48 pb-20">
+            <div class="container mx-auto px-6 md:px-12 lg:px-20">
+                <div class="max-w-4xl mx-auto text-center md:text-left">
+                    <p class="text-accent text-lg font-medium mb-4">Hi, my name is</p>
+                    <h1 class="font-heading text-4xl sm:text-6xl lg:text-7xl font-bold text-slate-100">Pushp Raj Tripathi.</h1>
+                    <h2 class="font-heading text-3xl sm:text-5xl lg:text-6xl font-bold text-slate-400 mt-2">I build things for the web.</h2>
+                    <p class="mt-6 max-w-2xl text-lg text-slate-400">
+                         Welcome to my personal corner of the internet.
+                    </p>
+                    <a href="#contact" class="mt-8 inline-block bg-transparent border border-accent text-accent font-medium py-3 px-8 rounded-md hover:bg-accent hover:bg-opacity-10 transition-colors duration-300">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6 md:px-12 lg:px-20">
+                <h2 class="section-heading font-heading text-3xl font-bold text-slate-100 mb-12 flex items-center">
+                    <span class="text-accent text-2xl font-mono mr-2">01.</span> About Me
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
+                    <div class="md:col-span-3 text-slate-400 text-lg space-y-4">
+                        <p>
+                        Hello! My name is Pushp Raj Tripathi, and I'm a first-year student pursuing my B.Tech in <strong>Computer Science and Business Systems</strong> at Techno Main Salt Lake.
+                        </p>
+                        <p>
+                            I'm always open to feedback and suggestions. Feel free to connect—I'm happy to be interactive and discuss new ideas.
+                        </p>
+                        <p>Here are a few technologies I'm working with:</p>
+                        <ul class="grid grid-cols-2 gap-2 mt-4 font-mono text-sm">
+                            <li class="flex items-center"><span class="text-accent mr-2">▹</span> HTML</li>
+                            <li class="flex items-center"><span class="text-accent mr-2">▹</span> CSS</li>
+                            <li class="flex items-center"><span class="text-accent mr-2">▹</span> JavaScript</li>
+                            <li class="flex items-center"><span class="text-accent mr-2">▹</span> GitHub</li>
+                            <li class="flex items-center"><span class="text-accent mr-2">▹</span> Tailwind CSS</li>
+                        </ul>
+                    </div>
+                    <div class="md:col-span-2 group relative w-full max-w-sm mx-auto">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-blue-700 rounded-lg blur opacity-50 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                        <div class="relative bg-[#1e1e1e] rounded-lg leading-none flex items-center p-1">
+                             <img src="https://placehold.co/500x500/121212/008cff?text=Pushp+Raj+Tripathi" alt="Pushp Raj Tripathi" class="rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/500x500/121212/008cff?text=Profile+Image';">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20">
+            <div class="container mx-auto px-6 md:px-12 lg:px-20">
+                <h2 class="section-heading font-heading text-3xl font-bold text-slate-100 mb-12 flex items-center">
+                    <span class="text-accent text-2xl font-mono mr-2">02.</span> Some Things I've Built
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="project-card rounded-md shadow-lg overflow-hidden transition-transform duration-300">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#008cff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                            </div>
+                            <h3 class="font-heading text-xl font-bold text-slate-100 mb-2">Portfolio Website</h3>
+                            <p class="text-slate-400 text-base mb-4">
+                                The very website you're looking at! Built with Tailwind CSS and vanilla JavaScript.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="project-card rounded-md shadow-lg overflow-hidden transition-transform duration-300">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#008cff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                            </div>
+                            <h3 class="font-heading text-xl font-bold text-slate-100 mb-2">My Next Project</h3>
+                            <p class="text-slate-400 text-base mb-4">
+                                A brief description of another cool project I plan to build.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6 md:px-12 lg:px-20 text-center">
+                <p class="text-accent font-mono mb-2">03. What's Next?</p>
+                <h2 class="font-heading text-4xl lg:text-5xl font-bold text-slate-100 mb-4">Get In Touch</h2>
+                <p class="max-w-xl mx-auto text-slate-400 mb-8">
+                   My inbox is always open, whether you have a question or just want to say hi.
+                   <br>
+                   Let's build something amazing together!
+                </p>
+                <a href="mailto:tripathipushpraj59@gmail.com" class="inline-block bg-transparent border border-accent text-accent font-medium py-3 px-8 rounded-md hover:bg-accent hover:bg-opacity-10 transition-colors duration-300">
+                    Say Hello
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-8">
+        <div class="container mx-auto px-6 md:px-12 lg:px-20 text-center text-slate-500 text-sm">
+            <p>Designed & Built by Pushp Raj Tripathi.</p>
+            <p>Built with <span class="text-accent">♥</span>, HTML, and Tailwind CSS.</p>
+            <p class="mt-2">© PUSHP RAJ TRIPATHI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile navigation toggle
+            const navToggle = document.getElementById('nav-toggle');
+            const navContent = document.getElementById('nav-content');
+            if (navToggle && navContent) {
+                navToggle.addEventListener('click', () => {
+                    navContent.classList.toggle('hidden');
+                });
+            }
+
+            // Close mobile nav on link click
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!navContent.classList.contains('hidden') && window.innerWidth < 1024) {
+                         navContent.classList.add('hidden');
+                    }
+                });
+            });
+
+            // Header scroll effect
+            const header = document.getElementById('header');
+            const handleScroll = () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('header-scrolled');
+                } else {
+                    header.classList.remove('header-scrolled');
+                }
+            };
+            window.addEventListener('scroll', handleScroll);
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
